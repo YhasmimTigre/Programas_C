@@ -1,0 +1,28 @@
+///Esse programa calcula a potencia de um número pelo metodo recursivo
+
+#include <stdio.h>
+
+int recursiva (int num, int pot){
+    
+    if (pot == 0) {
+        return 1;
+    }
+    return num * recursiva (num, pot - 1);
+       
+}
+
+
+int main()
+{
+    int num, pot;
+    
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+     
+    printf("Dgite a potencia do numero: ");
+    scanf("%d", &pot);
+    
+    int x = recursiva (num, pot);
+    printf("%d", x);
+    
+}
