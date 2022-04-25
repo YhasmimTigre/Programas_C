@@ -1,3 +1,5 @@
+/* esse programa checa se um conjunto de numeros é um palindromo usando função recursiva*/
+
 #include <stdio.h>
 
 int checar (int array);
@@ -17,6 +19,7 @@ int main()
     }
 }
 
+/*função recursiva*/
 int checar(int array){
     
     static int soma = 0;
